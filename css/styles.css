@@ -1,0 +1,265 @@
+:root {
+    /* Tipografia */
+    --fuentePrincipal: "Staatliches", sans-serif;
+
+
+    /* Colores */
+    --primario: #9C27B0;
+    --primarioOscuro: #89119D;
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233, 287, 2);
+    --colorBlanco: #FFF;
+    --colorNegro: #000;
+}
+
+/* Globales */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--primario);
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--colorBlanco);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    /* width: 100%; */
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    color: var(--secundario);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+.header a {
+    line-height: 0;
+}
+
+
+/* NAV */
+.navegacion {
+    background-color: var(--primarioOscuro);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0rem;
+
+}
+
+.navegacion__enlace {
+    color: var(--colorBlanco);
+    font-family: var(--fuentePrincipal);
+    font-size: 3.2rem;
+    transition: .5s color ease-in-out;
+    text-align: center;
+}
+
+.navegacion__enlace:hover {
+    color: var(--secundario);
+}
+
+
+/* MAIN */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 10rem;
+}
+
+@media (width>=768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (width>=1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+
+/* PRODUCTO */
+.producto {
+    background-color: var(--colorBlanco);
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    line-height: 0;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: .3s scale ease-in-out;
+    line-height: normal;
+}
+
+@media (width>=768px) {
+    .producto{
+        width: 95%;
+    }
+    .producto:hover {
+        scale: 1.02;
+    }
+}
+
+.producto__imagen {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.producto_divAux {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.producto__info {
+    margin-top: 0rem;
+}
+
+.producto__titulo {
+    color: var(--colorNegro);
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+}
+
+.producto__precio {
+    background-color: var(--primarioOscuro);
+    padding: 0.75rem 1rem;
+    color: var(--colorBlanco);
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.producto__descripcion {
+    color: #C1C1C1;
+    font-size: 1.3rem;
+    line-height: 0;
+
+}
+
+.producto__categoria {
+    display: inline-block;
+    background-color: #6a6a6a;
+    color: var(--colorBlanco);
+    margin: 0rem 0rem 2rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.producto__boton {
+    background-color: var(--primario);
+    color: var(--colorBlanco);
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.producto__boton:hover {
+    background-color: var(--primarioOscuro);
+    color: #c4c4c4;
+}
+
+
+/* FOOTER */
+.footer-bg {
+    background-color: var(--primarioOscuro);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    line-height: 0;
+    padding: 2rem 1rem;
+}
+
+@media (width>=768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer__texto {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+@media (width>=768px) {
+    .footer__texto {
+        font-size: 1.8rem;
+    }
+}
+
+.footer__redes a svg {
+    stroke: var(--colorBlanco);
+    transition: .5s stroke ease-in-out;
+}
+
+.footer__redes a:hover svg {
+    stroke: var(--secundario)
+}

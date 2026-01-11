@@ -22,11 +22,13 @@
     <link rel="stylesheet" href="css/normalize.css" as="stylesheet">
 
     <!-- Vinculacion con tipografia -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
-        rel="stylesheet">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Staatliches&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Staatliches&display=swap"
+            rel="stylesheet">
+    </noscript>
 
 
     <!-- Vinculacion con CSS -->
@@ -55,15 +57,10 @@
             <!-- INICIO REM -->
             <div class="producto">
                 <a href="producto.html">
-                    <img class="producto__imagen" src="imgWebp/1.webp" alt="Remera Vue JS">
+                    <img class="producto__imagen" src="imgWebp/1.webp" alt="Remera Vue JS" fetchpriority="high">
                     <div class="producto__info">
-                        <div class="producto_divAux">
-                            <p class="producto__titulo">Vue JS</p>
-                            <p class="producto__precio">$50</p>
-                        </div>
-                        <p class="producto__descripcion">Remera cómoda con diseño inspirado en Vue.js.</p>
-                        <p class="producto__categoria">Frontend</p>
-                        <button class="producto__boton">Agregar</button>
+                        <p class="producto__titulo">Vue JS</>
+                        <p class="producto__precio">$50</p>
                     </div>
                 </a>
             </div>
@@ -72,16 +69,10 @@
             <!-- INICIO REM -->
             <div class="producto">
                 <a href="producto.html">
-                    <img class="producto__imagen" src="imgWebp/2.webp" alt="Angular JS">
+                    <img class="producto__imagen" src="imgWebp/2.webp" alt="Remera Angular JS" fetchpriority="high">
                     <div class="producto__info">
-                        <div class="producto_divAux">
-                            <p class="producto__titulo">Remera Angular JS</p>
-                            <p class="producto__precio">$50</p>
-                        </div>
-                        <p class="producto__descripcion">Diseño moderno ideal para desarrolladores Angular.</p>
-
-                        <p class="producto__categoria">Frontend</p>
-                        <button class="producto__boton">Agregar</button>
+                        <p class="producto__titulo">Angular JS</p>
+                        <p class="producto__precio">$50</p>
                     </div>
                 </a>
             </div>
@@ -90,19 +81,151 @@
             <!-- INICIO REM -->
             <div class="producto">
                 <a href="producto.html">
-                    <img class="producto__imagen" src="imgWebp/3.webp" alt="Remera React JS">
+                    <img class="producto__imagen" src="imgWebp/3.webp" alt="Remera React JS" fetchpriority="high">
                     <div class="producto__info">
-                        <div class="producto_divAux">
-                            <p class="producto__titulo">Remera React JS</p>
-                            <p class="producto__precio">$50</p>
-                        </div>
-                        <p class="producto__descripcion">Estilo minimalista para fans de React.</p>
-                        <p class="producto__categoria">Frontend</p>
-                        <button class="producto__boton">Agregar</button>
+                        <p class="producto__titulo">React JS</p>
+                        <p class="producto__precio">$50</p>
                     </div>
                 </a>
             </div>
             <!-- FIN REM -->
+
+            <!-- INICIO REM -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="imgWebp/4.webp" alt="Remera React JS" loading="lazy">
+                    <div class="producto__info">
+                        <p class="producto__titulo">Redux</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div>
+            <!-- FIN REM -->
+
+            <!-- INICIO REM -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="imgWebp/5.webp" alt="Remera Node JS" loading="lazy">
+                    <div class="producto__info">
+                        <p class="producto__titulo">Node JS</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div>
+            <!-- FIN REM -->
+
+            <!-- INICIO REM -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="imgWebp/6.webp" alt="Remera SASS" loading="lazy">
+                    <div class="producto__info">
+                        <p class="producto__titulo">SASS</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div>
+            <!-- FIN REM -->
+
+            <!-- INICIO REM -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="imgWebp/7.webp" alt="Remera HTML" loading="lazy">
+                    <div class="producto__info">
+                        <p class="producto__titulo">HTML</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div>
+            <!-- FIN REM -->
+
+
+            <!-- INICIO REM -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="imgWebp/8.webp" alt="Remera GitHub" loading="lazy">
+                    <div class="producto__info">
+                        <p class="producto__titulo">GitHub</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div>
+            <!-- FIN REM -->
+
+            <!-- INICIO REM -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="imgWebp/9.webp" alt="Remera Bulma" loading="lazy">
+                    <div class="producto__info">
+                        <p class="producto__titulo">Bulma</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div>
+            <!-- FIN REM -->
+
+            <!-- INICIO REM -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="imgWebp/10.webp" alt="Remera TypeScript" loading="lazy">
+                    <div class="producto__info">
+                        <p class="producto__titulo">TypeScript</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div>
+            <!-- FIN REM -->
+
+            <!-- INICIO REM -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="imgWebp/11.webp" alt="Remera Drupal" loading="lazy">
+                    <div class="producto__info">
+                        <p class="producto__titulo">Drupal</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div>
+            <!-- FIN REM -->
+
+            <!-- INICIO REM -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="imgWebp/12.webp" alt="Remera JavaScript" loading="lazy">
+                    <div class="producto__info">
+                        <p class="producto__titulo">JavaScript</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div>
+            <!-- FIN REM -->
+
+            <!-- INICIO REM -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="imgWebp/13.webp" alt="Remera GraphQL" loading="lazy">
+                    <div class="producto__info">
+                        <p class="producto__titulo">GraphQL</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div>
+            <!-- FIN REM -->
+
+            <!-- INICIO REM -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="imgWebp/14.webp" alt="Remera WordPress" loading="lazy">
+                    <div class="producto__info">
+                        <p class="producto__titulo">WordPress</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div>
+            <!-- FIN REM -->
+
+
+            <div class="grafico grafico--camisas"></div>
+            <div class="grafico grafico--node"></div>
 
         </div>
 
@@ -153,7 +276,7 @@
                 </a>
 
                 <!-- Tiktok -->
-                <a href="https://www.tiktok.com/">
+                <a href="https://www.tiktok.com/" aria-label="Contactarme por Tiktok">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok">

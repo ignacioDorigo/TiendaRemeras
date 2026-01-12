@@ -378,6 +378,14 @@ h3 {
     gap: 2rem;
     margin-bottom: 2rem;
 }
+.remera__campos{
+    width: 100%;
+}
+
+.remera__campos label{
+    color: var(--colorBlanco);
+    font-family: var(--fuentePrincipal);
+}
 
 .remera__inputs input,
 .remera__inputs select {
@@ -389,6 +397,7 @@ h3 {
     font-family: var(--fuentePrincipal);
     padding: 1rem 0rem;
     font-size: 2rem;
+    height: 5rem;
 }
 
 

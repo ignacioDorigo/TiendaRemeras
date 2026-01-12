@@ -54,14 +54,21 @@
                 <p class="remera__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
                     deserunt blanditiis vero, laborum aperiam ea libero? Autem impedit quo facere.</p>
                 <div class="remera__inputs">
-                    <select class="remera__talles" name="talles" id="talles">
-                        <option value="" disabled selected>-- Elegir Talle-- </option>
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                        <option value="xl">XL</option>
-                    </select>
-                    <input class="remera__cantidad" type="number" min="1" max="10" value="1">
+                    <div class="remera__campos">
+                        <label for="talles">Talle</label>
+                        <select class="remera__talles" name="talles" id="talles">
+
+                            <option value="" disabled selected>-- Elegir Talle-- </option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                    </div>
+                    <div class="remera__campos">
+                        <label for="cantidad">Cantidad</label>
+                        <input class="remera__cantidad" type="number" min="1" max="10" value="1" name="cantidad">
+                    </div>
                 </div>
 
                 <button class="remera__boton">Agregar al carrito</button>

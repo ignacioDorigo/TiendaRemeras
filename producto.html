@@ -36,7 +36,7 @@
 <body>
     <header class="header">
         <a href="index.html">
-            <img class="header__logo" src="imgWebp/logo.webp" alt="Logo FrontEndStore">
+            <img class="header__logo" src="imgWebp/logo.webp" alt="Logo FrontEndStore" fetchpriority="high">
         </a>
     </header>
     <nav class="navegacion">
@@ -44,13 +44,29 @@
         <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
     </nav>
 
-    <main class="main">
-        <h1>Nuestros Productos</h1>
+    <main class="main contenedor">
 
-        <div class="grid contenedor">
+        <h1>React JS</h1>
 
+        <div class="remera">
+            <img class="remera__imagen" src="imgWebp/1.webp" alt="Remera de React JS" fetchpriority="high">
+            <div class="remera__informacion">
+                <p class="remera__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                    deserunt blanditiis vero, laborum aperiam ea libero? Autem impedit quo facere.</p>
+                <div class="remera__inputs">
+                    <select class="remera__talles" name="talles" id="talles">
+                        <option value="" disabled selected>-- Elegir Talle-- </option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                    <input class="remera__cantidad" type="number" min="1" max="10" value="1">
+                </div>
+
+                <button class="remera__boton">Agregar al carrito</button>
+            </div>
         </div>
-
 
     </main>
 

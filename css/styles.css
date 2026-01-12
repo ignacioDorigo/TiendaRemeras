@@ -351,3 +351,61 @@ h3 {
 .bloque h3 {
     margin: 0;
 }
+
+/* REMERA */
+.remera {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+@media(width>=768px) {
+    .remera {
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+}
+
+.remera__imagen {
+    width: 100%;
+    object-fit: cover;
+}
+
+.remera__inputs {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.remera__inputs input,
+.remera__inputs select {
+    width: 100%;
+    background-color: var(--primario);
+    border: 1rem solid var(--primarioOscuro);
+    color: var(--colorBlanco);
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    padding: 1rem 0rem;
+    font-size: 2rem;
+}
+
+
+.remera__boton {
+    width: 100%;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    background-color: var(--secundario);
+    color: var(--colorNegro);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--fuentePrincipal);
+    font-size: 2.2rem;
+    transition: .3s background-color ease-in-out;
+}
+
+.remera__boton:hover {
+    background-color: #b89401;
+}

@@ -136,7 +136,7 @@ h3 {
     background-color: var(--primarioOscuro);
     line-height: normal;
     padding: 1rem;
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
 }
 
@@ -219,6 +219,8 @@ h3 {
     }
 }
 
+/*  */
+
 @media (width>=1024px) {
     .grafico--node {
         grid-row: 6/7;
@@ -268,4 +270,48 @@ h3 {
 
 .footer__redes a:hover svg {
     stroke: var(--secundario)
+}
+
+
+/* SOBRE NOSOTROS */
+.nosotros {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+@media (width>=768px) {
+    .nosotros {
+        width: 95%;
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+.nosotros__texto {
+    width: 100%;
+    order: 2;
+    display: inline-block;
+    padding: 0rem 1rem;
+}
+
+@media (width>=768px) {
+    .nosotros__texto {
+        order: 1;
+        padding: 0;
+    }
+}
+
+.nosotros__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    order: 1;
+}
+
+@media (width>=768px) {
+    .nosotros__img {
+        order: 2;
+    }
 }

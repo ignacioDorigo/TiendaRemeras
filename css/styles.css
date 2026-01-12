@@ -315,3 +315,39 @@ h3 {
         order: 2;
     }
 }
+
+/* COMPRAR */
+.comprar {
+    margin-bottom: 10rem;
+    padding: 0rem 1rem;
+}
+
+/* BLOQUES */
+.bloques {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media(width>=768px) {
+    .bloques {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(width>=1024px) {
+    .bloques {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.bloque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bloque h3 {
+    margin: 0;
+}
